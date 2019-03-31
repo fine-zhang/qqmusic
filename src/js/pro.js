@@ -38,6 +38,7 @@
 
     function start(p){
         lastper = p === undefined ? lastper : p;
+        cancelAnimationFrame(frameId);
         startTime = new Date().getTime();
         function frame() {
             var curTime = new Date().getTime();
